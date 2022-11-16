@@ -51,3 +51,22 @@ This takes on one of 5 values:
 
 
 2] A usage summary table ( "takehome_user_engagement" ) that has a row for each day that a user logged into the product.
+
+
+## Inference:
+
+The Dataset has been fitted with Random Forest Model to find the feature importance.
+
+![image](https://user-images.githubusercontent.com/85822284/202193264-67284f87-bfcd-40b2-bf51-fd7e8b944cdc.png)
+
+
+**The top 5 important features seem to be:**
+
+ - days_since_creation
+ - org_id
+ - invited_by_user_id
+ - creation_source_PERSONAL_PROJECTS
+ - opted_in_to_mailing_list
+
+**Future possible work:** We can also add a feature which calculates the difference between the creation date of the account and the first login of the user.
+
